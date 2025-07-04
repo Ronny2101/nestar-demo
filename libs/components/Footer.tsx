@@ -3,6 +3,7 @@ import TelegramIcon  from "@mui/icons-material/Telegram";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -24,10 +25,18 @@ const Footer = () => {
                 <Box component={"div"} className={"footer-box"}>
                     <span>follow us on social media</span>
                     <div className={"media-box"}>
-                        <FacebookOutlinedIcon />
-                        <TelegramIcon />
-                        <InstagramIcon />
-                        <TwitterIcon />
+                        <Link href={"https://facebook.com"}>
+                          <FacebookOutlinedIcon />
+                        </Link>
+                        <Link href={"https://telegram.com"}>
+                          <TelegramIcon />
+                        </Link>
+                        <Link href={"https://instagram.com"}>
+                          <InstagramIcon />
+                        </Link>
+                        <Link href={"https://twitter.com"}>
+                          <TwitterIcon />
+                        </Link>
                     </div>
                 </Box>
             </Stack>
@@ -65,8 +74,8 @@ const Footer = () => {
             </Stack>
         </Stack>
         <Stack className={"second"}>
-            <span>@Nestar - All rights reserved. Nestar 2025</span>
-            <span>Privacy * Terms * Sitemap</span>
+            <span>© Nestar - All rights reserved. Nestar 2025</span>
+            <span>Privacy · Terms · Sitemap</span>
         </Stack>
     </Stack>
   );
